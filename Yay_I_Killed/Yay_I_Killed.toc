@@ -1,0 +1,7 @@
+## Interface: 70300
+## Title: Yay! I Killed!
+## Author: psyb0t
+## URL: https://github.com/psyb0t/Yay_I_Killed
+## Notes: Make everyone around you stare in awe as you anounce your kills!
+## Version: 1.0.0
+Yay_I_Killed.lua
