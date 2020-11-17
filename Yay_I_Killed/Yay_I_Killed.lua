@@ -21,14 +21,14 @@ frame:SetScript("OnEvent", function(self, event, ...)
         if (sourceGUID == playerGUID) then
             local nameOfWhatWasKilled = argumentTable[9]
 
-            local msgFormat = "Yay! I Killed %s!"
-            local msg = string.format(msgFormat, nameOfWhatWasKilled)
+            local msg = string.format("Yay! I killed %s!", nameOfWhatWasKilled)
 
             if testing then
                 SendChatMessage(msg, "WHISPER", nil, UnitName("player"))
-            else
-                SendChatMessage(msg, "SAY")
+                return
             end
+
+            SendChatMessage(msg, "SAY")
         end
     end
 end)
